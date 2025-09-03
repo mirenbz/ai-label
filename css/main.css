@@ -126,3 +126,74 @@ footer img {
 }
 ::selection {background:Wheat;}
 ::-moz-selection {background:Wheat;}
+
+
+/* language switcher */
+
+.switch-lang {
+  text-align: left;
+  cursor: pointer;
+  z-index: 50;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size:.7em;
+}
+.switch-lang a { 
+  color: #666; 
+  text-decoration:none; }
+.switch-lang:hover .lang-dropdown {
+  display: block;
+}
+.current-lang {
+  background: rgba(255,255,255,.3);
+  padding: 3px 5px 0px 5px;
+  border-radius: 5px;
+  font-weight:bold;
+}
+.current-lang svg {
+  width:1.3em;
+  vertical-align: middle;
+}
+.current-lang p {
+  margin-left: 3px;
+}
+.lang-text {
+  display: inline-block;
+  vertical-align: top;
+  margin: .3em .6em;
+  margin-top:0;
+}
+.lang-dropdown {
+  display: none;
+  background: rgba(255,255,255,.3);
+  border-radius: 5px;
+  margin-top: 2px;
+  text-align: right;
+}
+.selecting-lang {
+  padding: 3px 5px 3px 5px;
+  cursor: pointer;
+}
+.selecting-lang:hover {
+  background: rgba(255,255,255,1);
+}
+.switch-lang ul > :first-child {
+  border-radius: 5px 5px 0px 0px;
+}
+.switch-lang ul > :last-child {
+  border-radius: 0px 0px 5px 5px;
+}
+.switch-lang li {
+  list-style-type: none;
+}
+.switch-lang p { 
+  margin-bottom:0; 
+}
+.menu-arrow {
+  display: inline-block;
+  width: 10px;
+  margin-left: 10px;
+  vertical-align: top;
+  margin-top: 6px;
+}
